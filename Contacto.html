@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/9a1e245a38.js" crossorigin="anonymous" ></script>
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Comics!</title>
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <label class="title">Comics!</label>
+      <ul class="items">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Personajes.html">Personajes</a></li>
+        <li><a href="PeliculasySeries.html">Series y Películas</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="cont-pelis-shows">
+      <div class="top-image">
+        <a href="https://www.youtube.com/watch?v=BPjbiZQmBI4" target="_blank">
+           <img src="images/Wakanda.jpg" alt="Wakanda" />
+        </a>
+    </div>
+
+    <script src="formulario.js"></script>
+
+    <div class="contact_form">
+
+      <div class="formulario">      
+
+        <h1>FORMULARIO DE CONTACTO</h1>
+          <h3>Escríbenos y en breve responderemos tu consulta</h3>
+          <form id="form" class="form" action="https://formspree.io/f/mlevppow" method="POST">       
+            <p>
+              <label for="nombre" class="colocar_nombre">Nombre<span class="obligatorio">*</span></label>
+                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            </p>
+            <p>
+              <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
+                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu email">
+            </p>    
+            <p>
+              <label for="asunto" class="colocar_asunto">Asunto<span class="obligatorio">*</span></label>
+                <input type="text" name="introducir_asunto" id="asunto" required="obligatorio" placeholder="Escribe un asunto">
+            </p>    
+            <p>
+              <label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>                     
+               <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+            </p>                    
+            <button type="submit" name="enviar_formulario" id="enviar" onclick='return enviarFormulario()'><p>Enviar</p></button>
+            <p class="aviso">
+               <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>          
+          </form>
+
+     </div>  
+   </div>
+
+  </main>
+
+  <footer>
+
+    <div class="contenedor">
+      <div class="left">
+        <h2>SOBRE Comics!</h2>
+        <p>
+          Comics.com fue creada para el proyecto Codo a Codo y se convirtió en
+          el mayor sitio web del mundo sobre cómics.
+        </p>
+      </div>
+
+      <div class="center">
+        <h2>SÍGUENOS</h2>
+        <div class="social">
+          <a href=""><span class="fa-brands fa-twitter"></span></a>
+          <a href=""><span class="fa-brands fa-instagram"></span></a>
+          <a href=""><span class="fa-brands fa-tiktok"></span></a>
+          <a href=""><span class="fa-brands fa-facebook"></span></a>
+        </div>
+      </div>
+
+      <div class="right">
+        <img
+          src="images/captain-america.png"
+          width="auto"
+          height="150px"
+          alt="Captain America logo"
+        />
+      </div>
+    </div>
+
+    <div class="pie-pagina">
+      &copy; 2022 <b>Comics.com</b> - Todos los derechos reservados.
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
